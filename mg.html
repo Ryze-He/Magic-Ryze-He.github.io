@@ -1,132 +1,1426 @@
-<!DOCTYPE html>
-<html lang="en-gb">
-  <head>
+<html lang="en-gb" class="tablesaw-enhanced" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb"><head><style data-merge-styles="true"></style>
+  <style data-merge-styles="true"></style><style data-merge-styles="true"></style><meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="csrf-token" content="Hy0QA3AhNAMWCSl9JGVMeVBzNwwIAAAAnlIeFwceFXnMU5z65JeM9A==">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
+  <title>XJTLU e-Bridge</title>
 
-    <title>EVL_020 - Automatic Logout</title>
+  <link rel="stylesheet" href="../css/sits.css">
+  <link rel="stylesheet" href="../css/sv.css">
+  <link rel="stylesheet" href="../plugins/css/ui/sits-ui.css">
+  <link rel="stylesheet" href="../fontawesome5.6.0/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="../fontawesome5.6.0/css/brands.css" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../css/sits.css">
-    <link rel="stylesheet" href="../css/sv.css">
-    <link rel="stylesheet" href="../plugins/css/ui/sits-ui.css">
+<!-- 	<link rel="stylesheet" href="../css/mysits.css?v=950.1">  -->
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="../plugins/javascript/html5shiv.min.js"></script>
-      <script src="../plugins/javascript/respond.min.js"></script>
-    <![endif]-->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="../plugins/javascript/html5shiv.min.js"></script>
+    <script src="../plugins/javascript/respond.min.js"></script>
+  <![endif]-->
 
-    <script src="../plugins/javascript/jquery.js?v=960.1"></script>
-    <script src="../plugins/javascript/jquery-ui.js?v=960.1"></script>
+  <script src="../plugins/javascript/jquery.js?v=960.1"></script>
+  <script src="../plugins/javascript/jquery-ui.js?v=960.1"></script>
 
-    <script src="../plugins/javascript/sv.min.js?v=910.1"></script>
+  <script src="../plugins/javascript/sv.min.js?v=910.1"></script>
 
-    <script src="../javascript/settings.js?v=920.1"></script>
-    <script src="../javascript/sits_ajax.js?v=960.1"></script>
+  <!--[for editer]added by Xiaolei>-->
+  <script src="../plugins/ckeditor/ckeditor.js?v=910.1"></script><style>.cke{visibility:hidden;}</style>
 
-    <script src="../plugins/javascript/tablesaw/tablesaw.min.js?v=960.1"></script>
-    <script src="../plugins/javascript/datatables/media/js/jquery.dataTables.min.js?v=910.1"></script>
-    <script src="../plugins/javascript/datatables/media/js/dataTables.tribal.min.js?v=960.1"></script>
 
-    <style id="antiClickjack">body{display:none !important;}</style> 
-    <script>
-    if (self===top) { // we are not in a frame remove the style tag
-      var antiClickjack = document.getElementById("antiClickjack");
-      antiClickjack.parentNode.removeChild(antiClickjack);
-	}else{// we are in a frame set outermost document/frame to be same as frame location
-       top.location = self.location;
-    }
-    </script>
-    <script>
-	  function uSubmit(){} //include dummy function to prevent errors when submitting
-	</script>
-  </head>
+  <script src="../javascript/settings.js?v=920.1"></script>
+  <script src="../javascript/sits_ajax.js?v=960.1"></script>
 
-  <body>
-    <a class="sv-sr-only sv-sr-only-focusable" href="#sv-page-top">Skip navigation</a>
-    <header class="sv-header-main sv-hidden-print">
+  <script src="../plugins/javascript/tablesaw/tablesaw.min.js?v=960.1"></script>
+  <script src="../plugins/javascript/datatables/media/js/jquery.dataTables.min.js?v=910.1"></script>
+  <script src="../plugins/javascript/datatables/media/js/dataTables.tribal.min.js?v=960.1"></script>
+  
+  
+  <script>
+  if (self===top) { // we are not in a frame remove the style tag
+    var antiClickjack = document.getElementById("antiClickjack");
+    antiClickjack.parentNode.removeChild(antiClickjack);
+}else{// we are in a frame set outermost document/frame to be same as frame location
+     top.location = self.location;
+  }
+  </script>
 
-      <nav class="sv-navbar-default">
-        <div class="sv-navbar-header">
-          <div class="sv-navbar-brand sv-header-image"></div>
+<script>
+  function uSubmit(){} //include dummy function to prevent errors when submitting
+  </script>
+<style>[id*='google_ads_iframe'],[id*='taboola-'],.taboolaHeight,.taboola-placeholder,#credential_picker_container,#credentials-picker-container,#credential_picker_iframe,[id*='google-one-tap-iframe'],#google-one-tap-popup-container,.google-one-tap-modal-div,#amp_floatingAdDiv,#ez-content-blocker-container,#notify-adblock{display:none!important;min-height:0!important;height:0!important;}</style></head>
+
+<body>
+
+  <a class="sv-sr-only sv-sr-only-focusable" href="#sv-page-top">Skip navigation</a>
+  <header class="sv-header-main sv-hidden-print">
+
+    <nav class="sv-navbar-default">
+      <div class="sv-navbar-header">
+        <button type="button" class="sv-navbar-toggle" data-sv-toggle="sv-collapse" data-sv-target=".sv-navbar-responsive-collapse">
+          <span class="sv-icon-bar"></span>
+          <span class="sv-icon-bar"></span>
+          <span class="sv-icon-bar"></span>
+        </button>
+        <div class="sv-navbar-brand sv-header-image"></div>
+      </div>
+      <div role="menubar" class="sv-navbar-collapse sv-collapse sv-navbar-responsive-collapse">
+
+        <ul role="menu" class="sv-nav sv-navbar-nav">
+
+          <!-- The Tab list field contains each page tab as a li item, child page tabs will create a new ul within the outer ul -->
+          <!-- Includes VCON and CONTENT as without this we can't dynamically set styles based on break points and max tabs -->
+          <li role="menuitem">
+<a href="siw_portal.url?B2DE26A1BAF74CF5pEH4kXVbclwJ0Vvw0XY2j88JqReJRPltqZADbuBc1dkmLeY94GTHyYVxRSIktKDon2fSsG_7Ob0kFQ6IZviJHtdA0zAP6C6HecxWsvSI7mXK94Q9U-poBt_VvoHD2wo366PPIrOLkOE64FQGY0U6L4x6T_rRSOQsHEBQK169wLp4Osdz1vCf865gyPKSUeDfx8p_qHtZcfmeRIM7oGlCYbNSKyDuWEqCPNxrjpX25B4" id="STU_HOME"><span class="glyphicon glyphicon-home"></span> Home Page</a>
+
+</li>
+<li role="menuitem">
+<a href="siw_portal.url?698CBBE29C3A4219APGE1ZjdRlKaEDkgZ8Ot7ccprElsT_PFVFqmr1w-NDMer3EcEU7FP0uesMCfCNy09W2fsNdbTzR-k2GO9_HlgybTbuIa-wbA1GPHK6DQL-nuPiLXTLptcwbedrN3b-qNQaYvZMQlaWHXxD9qAzlxxXkUsQdEe-PkP0E9pUdjSg2vlZGyx5RERED2U43czd6UY0eYvv_ri4u5cIIAAF1WkCqO-RF_dRVomIa-EDJq3NY" id="STU_REG_ANU"><i class="fas fa-user-edit"></i> Annual Registration</a>
+
+</li>
+<li role="menuitem" class="sv-dropdown">
+<a href="javascript://PRS_STU_ACAD" class="sv-dropdown-toggle" data-sv-toggle="sv-dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-university"></i> Academic <b class="sv-caret"></b></a>
+
+<ul role="menu" class="sv-dropdown-menu">
+<li role="menuitem">
+<a href="siw_portal.url?E6C84C84003647E4qRiKNG8ixHuubL8puzQZIV6WBPTAu3xhAlut76ZUlnAtEImONPJ7hmmstPY7RJzCm2A7lUIeoHtQzeAcmsY-P2XmjgKUA21ZcaDC_9ov4tWu28soqUrs5wr61XpR-Br3kVKn8H3tQq8GMQxUa3kVG9UilieJS3u2Mq2CT5XmmmylEl-UhRMOoZCnvdwITEFvUexNASdahp0DPYIKasnL5bsMiF-yTFwPby5dODCsAgk" id="STU_ACADR"><i class="fas fa-graduation-cap"></i> Academic Records</a>
+
+</li>
+<li role="menuitem">
+<a href="siw_portal.url?1167F75459744EA3rVF3DPJm8elmc30YIDQeFUCiLaVDi8jlYrOKV4RdAABWh7pSRvkdHqeyjZLQnzdDLYGtoMxZcR_VzhmNgKD6AiraU-AJx_amltYRe5AJk11P9QWuK8xfUdHyC8eyKAwa4kDfeDHKoQlZpx5KAj3tHZLNKMPilvNlSk0UKz0KCgBM6e8V3rHlj2uv1kmTPLqrVTCeaROPaQmJ4wwsyd0z7p6qaGgHOfc4-MX8L-A2Pa8" id="PRS_STU_PM"><span class="fas fa-book-reader"></span> Programme and Module</a>
+
+</li>
+<li role="menuitem">
+<a href="siw_portal.url?06CF6A338CA240B589pZRjqoHMoM_-kYAVrzBtHrXB_-N7Q5tzCglWS2lhrtXngfzPbZDOgJX1jxQea2t85QnYOfR05H3_tpXUe0F5XeCiYREaqzTSu35zs6BYUs8tbscHd8aW6vB2VPnNAktL2in7CIglHngPzzUzMW8UW-CHPb3mzSlL-nRjz3Vm7luf7OfZowr_gFALg5zzHi14TXhbkjnw1a012WZLK8UPJKZuq8M_dENE8e9V12oic" id="PRS_STU_ESS"><i class="fas fa-folder-plus"></i>  Extended Studies Scheme (ESS)</a>
+
+</li>
+<li role="menuitem">
+<a href="siw_portal.url?523E022711E34709lus-oNbiMZlcvWQmBLXvxdcvEC_PmTRJFkiL_FnLfV_ZEEOlplhcWQ7FNy7dOFcbI0JqodAkexjH3WhbEiCGTOeXi6287bz2ZOp3FbG0shIHOgc6RvFA4Z6-Sz2c_IxIm4BSyu7_D59z9Xhw31jSIxHkdlus7pRgQo-OG4ECfuRs60qSBfCWSqtiwodIH_l8UeuLYVvVOT5-MARs6fK1LeZTXq1cFRod8CIbKY3XqZQ" id="PRS_STU_INF"><span class="glyphicon glyphicon-info-sign"></span> Useful Information: Assessment</a>
+
+</li>
+
+</ul>
+</li>
+<li role="menuitem" class="sv-visible-xs sv-visible-md sv-visible-lg">
+<a href="siw_portal.url?5F7EB673779B4FE8L0qNtyjyPl90L7tQiSgVE8W-PNt_Q73EspHHYjg8BAlkunL-F4fvIp5u_q5xp-YyHsbMheG00hOc83B-tgJOonekh_kPKizWNIMk9PL7-RmqNwB6M5qgQ1Qn2cjgKbs69w4CCYkU5zyTjbGguQfmbI3fPwu4bbPMyk49XPiugf_4p2M4k8u_3ip8MIZx_4LEp0KSAXJ755SHfd_jVf6xvRpj1wWiqpm9Qcjzqvmj1a4" id="PRS_STU_TB"><i class="fas fa-calendar-alt"></i> Timetables</a>
+
+</li>
+<li role="menuitem" class="sv-visible-xs sv-visible-md sv-visible-lg">
+<a href="siw_portal.url?8438CE5AD0DD4898NchWe0wpHBOeV3BBfSxnWChKamj8XMJWmqlHaP_JObUwbV42SmvuISQbfVq4hY-9zHE-ZqPJiDy4Cib4mVDBr8OLPeXWYbeEL3Wqpon12TUveNw2Ko1jdtUgDvzRuEnrPfySfDTIlj8rXMWTHbomNOXq7QrVJcuJi3eQP6BKhGmMeP7NHW4bwWcZuGHCudnwfLeIaUIQz92GRoegsCl4nQ0VSI7vpie03u_CGXAOHFQ" id="STU_STY"><span class="glyphicon glyphicon-plane"></span>  Student Mobility</a>
+
+</li>
+<li role="menuitem" class="sv-visible-xs sv-visible-lg">
+<a href="siw_portal.url?794327DA065B4B25IiAemmcCIV_DkCFn8BzbzLgd3GD74hITXs3ms2Dw8ZmM9WxSRPdc9dfsAnR7vM0As-phVnT3N1S50GJB1MIKKQrFqtSlLWmb0INJ_IxpECgwSb_2rSr71bjZcyEPf9YgzodjFddfO0GP1ouMIVfzNumTvJ8UBf9pt3yaT5rryDo0t9zBnncSu4azN9Kqs50FHVeS-Oqr-IDwHz6M53PafjkWX8fSbdgYCaOvCVcHP1k" id="PRS_CAA"><span class="glyphicon glyphicon-tasks"></span> Research Support</a>
+
+</li>
+<li role="menuitem" class="sv-dropdown sv-visible-xs sv-visible-lg">
+<a href="javascript://PRS_STU_QR" class="sv-dropdown-toggle" data-sv-toggle="sv-dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-link"></span> Quick Reference <b class="sv-caret"></b></a>
+
+<ul role="menu" class="sv-dropdown-menu">
+<li role="menuitem" class="sv-visible-xs sv-visible-lg">
+<a href="siw_portal.url?F57787701A674F9CqaLbsW1gXPe5QenoBQojD2eq3ZXlI6xLe1RXbOCMHusyUV6T-jPNUZvTQbJNLVyeeoeh6FXDFntuFszWRjfbC6o0GF5gNTTsXHIbZUgz4JJsYuWI8Smm_MIkstnTdv-lL1612fKkEn4VG4jz3loySryRcOgMFtM3wkAXci6DXf0yf5TCYK1gtBNF1SwgHy3ZDPBg_1OxihEmmzeV4cIGI5yFPq5XWyTVL9d9mN5Zsjo" id="STU_EB"><span class="glyphicon glyphicon-globe"></span> About e-Bridge</a>
+
+</li>
+<li role="menuitem" class="sv-visible-xs sv-visible-lg">
+<a href="siw_portal.url?2557B8D62E364D2Euf9ycdjC-k800RGwcef8OzXuyBc_jbHLT5VIsZQSYVv4Yf_NfmKJs8Bi3x07UsG-F9z1vdroLK7DKbmsftD-4-MM36mMIT5Ojlb7rl0Hr2LpkgYH5Upou2LECvykVLknY9ZNBVLZo67QdeTPC-PEDmiitUCntcNKq6I8WNtQHbga26Aaimas3qSTP9THF02iTzcorG2yt8Mk941xWzFdS6ivZMSndZH25cJQDm-vmsw" id="PRS_STU_PR"><span class="glyphicon glyphicon-book"></span> Policies and Regulations</a>
+
+</li>
+
+</ul>
+</li>
+
+<li role="menuitem" class="sv-dropdown sv-visible-sm sv-visible-md">
+
+<a href="#" aria-expanded="false" aria-label="More Links" class="sv-dropdown-toggle" data-sv-toggle="sv-dropdown">
+
+  <span class="glyphicon glyphicon-plus">
+
+    <span class="sv-sr-only">+</span>
+
+  </span>
+
+</a>
+
+<ul role="menu" class="sv-dropdown-menu">
+<li role="menuitem" class="sv-visible-sm">
+<a href="siw_portal.url?5F7EB673779B4FE8L0qNtyjyPl90L7tQiSgVE8W-PNt_Q73EspHHYjg8BAlkunL-F4fvIp5u_q5xp-YyHsbMheG00hOc83B-tgJOonekh_kPKizWNIMk9PL7-RmqNwB6M5qgQ1Qn2cjgKbs69w4CCYkU5zyTjbGguQfmbI3fPwu4bbPMyk49XPiugf_4p2M4k8u_3ip8MIZx_4LEp0KSAXJ755SHfd_jVf6xvRpj1wWiqpm9Qcjzqvmj1a4" id="smPRS_STU_TB"><i class="fas fa-calendar-alt"></i> Timetables</a>
+
+</li>
+<li role="menuitem" class="sv-visible-sm">
+<a href="siw_portal.url?8438CE5AD0DD4898NchWe0wpHBOeV3BBfSxnWChKamj8XMJWmqlHaP_JObUwbV42SmvuISQbfVq4hY-9zHE-ZqPJiDy4Cib4mVDBr8OLPeXWYbeEL3Wqpon12TUveNw2Ko1jdtUgDvzRuEnrPfySfDTIlj8rXMWTHbomNOXq7QrVJcuJi3eQP6BKhGmMeP7NHW4bwWcZuGHCudnwfLeIaUIQz92GRoegsCl4nQ0VSI7vpie03u_CGXAOHFQ" id="smSTU_STY"><span class="glyphicon glyphicon-plane"></span>  Student Mobility</a>
+
+</li>
+<li role="menuitem" class="sv-visible-sm sv-visible-md">
+<a href="siw_portal.url?794327DA065B4B25IiAemmcCIV_DkCFn8BzbzLgd3GD74hITXs3ms2Dw8ZmM9WxSRPdc9dfsAnR7vM0As-phVnT3N1S50GJB1MIKKQrFqtSlLWmb0INJ_IxpECgwSb_2rSr71bjZcyEPf9YgzodjFddfO0GP1ouMIVfzNumTvJ8UBf9pt3yaT5rryDo0t9zBnncSu4azN9Kqs50FHVeS-Oqr-IDwHz6M53PafjkWX8fSbdgYCaOvCVcHP1k" id="smPRS_CAA"><span class="glyphicon glyphicon-tasks"></span> Research Support</a>
+
+</li>
+<li role="menuitem" class="sv-dropdown-submenu sv-visible-sm sv-visible-md">
+<a href="javascript://PRS_STU_QR" tabindex="-1" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-link"></span> Quick Reference</a>
+<ul role="menu" class="sv-dropdown-menu">
+<li role="menuitem" class="sv-visible-sm sv-visible-md">
+<a href="siw_portal.url?F57787701A674F9CqaLbsW1gXPe5QenoBQojD2eq3ZXlI6xLe1RXbOCMHusyUV6T-jPNUZvTQbJNLVyeeoeh6FXDFntuFszWRjfbC6o0GF5gNTTsXHIbZUgz4JJsYuWI8Smm_MIkstnTdv-lL1612fKkEn4VG4jz3loySryRcOgMFtM3wkAXci6DXf0yf5TCYK1gtBNF1SwgHy3ZDPBg_1OxihEmmzeV4cIGI5yFPq5XWyTVL9d9mN5Zsjo" id="smSTU_EB"><span class="glyphicon glyphicon-globe"></span> About e-Bridge</a>
+
+</li>
+<li role="menuitem" class="sv-visible-sm sv-visible-md">
+<a href="siw_portal.url?2557B8D62E364D2Euf9ycdjC-k800RGwcef8OzXuyBc_jbHLT5VIsZQSYVv4Yf_NfmKJs8Bi3x07UsG-F9z1vdroLK7DKbmsftD-4-MM36mMIT5Ojlb7rl0Hr2LpkgYH5Upou2LECvykVLknY9ZNBVLZo67QdeTPC-PEDmiitUCntcNKq6I8WNtQHbga26Aaimas3qSTP9THF02iTzcorG2yt8Mk941xWzFdS6ivZMSndZH25cJQDm-vmsw" id="smPRS_STU_PR"><span class="glyphicon glyphicon-book"></span> Policies and Regulations</a>
+
+</li>
+
+</ul>
+</li>
+
+
+</ul>
+
+</li>
+
+
+        </ul>           
+
+        <div class="sv-navbar-form sv-navbar-right">
+          <div class="sv-navbar-text sv-visible-xs-block">Logged In: Xinan Yan (<a href="../run/SIW_LGN_LOGOUT.start_url?6B1F85188E3F424CkSz2n-aFarSEY8synWO-fvoEdNRIoRDmMDZNDe25YlkbuQnuTCHwRWlowgnAtKsckL5zIqM-dJqvjtS6Avqq8w8ZEaT5ZDA97w0VfP__VpMijIk3F-KRVEWdLm7uUQQFCgcY5sJo-0Uynb5F57U69DSMp23xpVuXdwSv4V8WORJxhM2aJjuvoSWm4J9F4rlQPRgDYzsM5MM5mYIgaPeCKQ" target="_self" class="sv-navbar-link">Logout</a>)</div>    
+          <!-- Portal Search (Navigation Bar mode) -->
+
+<div id="sits_search_div">
+<input type="hidden" value="7737FBDA7B0B4581EK-JJdDjI8yupgT9B_GjaHN6xvcGeY2DLy1b18xr9k7sgzEjES-VVtqUQpEqWieHRnaIG4O8J2U8-rTVo7AfuO50Or1viNmAKn0yTfIa9juMJZbP1V2zGHFhLAEkq9ihYd9yt5CouBemBExAwUtHswG4wJ5Os5PSyj_O0E3cDUdyWXB514LelQECGH6VJE_VfoNWyqC6WJVd0YLP3hOFXbVKmBirMX43w6Ig-6-X36w" id="sits_search_key"> 
+<div class="sv-visible-xs-block">     
+  <div class="sv-input-group">
+    <input id="sits_search_input_xs" class="sv-form-control sv-input-sm" type="text" placeholder="Search e:Vision" title="Search e:Vision" data-ddg-inputtype="unknown" spellcheck="false" data-ms-editor="true">
+    <span class="sv-input-group-btn">
+      <button id="sits_search_button_xs" class="sv-btn sv-btn-default sv-btn-sm" type="button" title="Search" aria-label="Search">
+        <span class="glyphicon glyphicon-search"></span>
+      </button>
+    </span>
+  </div>
+</div>
+<div class="sv-hidden-xs">
+  <input id="sits_search_input_sm" class="sv-form-control sv-input-sm sv-hide" type="text" placeholder="Search e:Vision" title="Search e:Vision" data-ddg-inputtype="unknown" spellcheck="false" data-ms-editor="true">
+  <button id="sits_search_button_sm" class="sv-btn sv-btn-default sv-btn-sm" type="button" title="Search" aria-label="Search" aria-haspopup="true" aria-expanded="false">
+    <span class="glyphicon glyphicon-search"></span>
+  </button>
+</div>
+</div>
+ 
+<script>
+(function() {
+  var div = $("#sits_search_div");
+  var btn = div.find("button").removeAttr("name");
+  var inp = div.find("input").removeAttr("name").filter(":text");
+  var key = $("#sits_search_key").removeAttr("name");
+  if(btn.length>0 && inp.length>0 && key.length==1) { //check everything exists          
+    $("#sits_search_button_sm").attr("aria-haspopup","true").attr("aria-expanded",false); //accessibility
+    btn.attr("title","Search"); 
+    btn.attr("aria-label","Search");      
+    inp.attr("title","Search e:Vision");
+    inp.attr("placeholder","Search e:Vision");
+    inp.on("keydown",function(e) { //handle return key
+      if(e.which==13) {
+        $(sits_get_object(sits_replace(this.id,"input","button"))).click(); //click related button
+        return sits_cancel_event(e); //cancel key down
+      }
+    });
+    btn.on("click",function(e) { //hijack button click
+      var inp = $(sits_get_object(sits_replace(this.id,"button","input"))); //get related input
+      if(this.id.indexOf("_xs")<0) {
+        if(!inp.is(":visible")) {
+          inp.removeClass("sv-hide").css("top",0).css("left",0).css("position","absolute"); //show (to calculate position)
+          var off = $(this).offset();
+          var css = {};
+          css.top = off.top; //calculate position
+          css.left = off.left-inp.outerWidth();
+          inp.css(css).focus();
+          $(this).attr("aria-expanded",true);
+          return sits_cancel_event(e); //cancel button click
+        }
+        else if(inp.val()=="") { //hide input field
+          inp.addClass("sv-hide").removeAttr("style");
+          $(this).attr("aria-expanded",false).focus();
+          return sits_cancel_event(e); //cancel button click
+        }
+      }
+      var url = document.location.href; //get current url
+      url = url.substr(0,url.lastIndexOf("/"))+"/siw_portal_srch.start_url?"+key.val()+"~"+sits_escape_url(inp.val());
+      document.location.href = url; //redirect browser
+      return sits_cancel_event(e); //cancel button click
+    });
+    /*$(window).on("resize",sits_debounce_event(function(e) {
+      $("#sits_search_input_sm:visible").addClass("sv-hide"); //hide field on resize
+    },500,true));*/
+  }      
+})();   
+</script>                     
+       
+<!-- End of Portal Search (Navigation Bar mode) -->            
         </div>
-        <div class="sv-navbar-collapse sv-collapse sv-navbar-responsive-collapse"></div>
-      </nav>
 
-    </header>
+      </div>
+    </nav>
+    <div class="sv-header-text sv-hidden-xs">Logged In: Xinan Yan (<a href="../run/SIW_LGN_LOGOUT.start_url?6B1F85188E3F424CkSz2n-aFarSEY8synWO-fvoEdNRIoRDmMDZNDe25YlkbuQnuTCHwRWlowgnAtKsckL5zIqM-dJqvjtS6Avqq8w8ZEaT5ZDA97w0VfP__VpMijIk3F-KRVEWdLm7uUQQFCgcY5sJo-0Uynb5F57U69DSMp23xpVuXdwSv4V8WORJxhM2aJjuvoSWm4J9F4rlQPRgDYzsM5MM5mYIgaPeCKQ" target="_self">Logout</a>)</div>
+  </header>
 
-    <a id="sv-page-top"></a>
+  <a id="sv-page-top"></a>
 
-    <div class="sv-page-content sv-container-fluid">
+  <div class="sv-page-content sv-container-fluid">
+<script type="text/javascript">sits_widget_bp = {"dt":{"emptyTable":"No information available","info":"Showing _START_ to _END_ of _TOTAL_ entries","infoEmpty":"No entries to show","infoFiltered":" (filtered from _MAX_ total entries)","lengthMenu":"Show _MENU_ entries","loadingRecords":"Loading...","processing":"Processing...","search":"Search:","zeroRecords":"No matching entries found","paginate":{"first":"First","last":"Last","next":"Next","previous":"Previous"},"aria":{"sortAscending":": use to sort column ascending","sortDescending":": use to sort column descending","first":"Show first page","last":"Show last page","next":"Show next page","previous":"Show previous page"},"tribal":{"detailsLabelOpen":"Activate to show additional details for this row","detailsLabelClose":"Activate to hide additional details for this row","detailsLabelDataOpen":"Activate to show additional details for _DATA_","detailsLabelDataClose":"Activate to hide additional details for _DATA_"},"buttons":{"copyTitle":"Copy to clipboard","closeCopy":"Close","colVisTitle":"Column Visibility","colVisLegend":"Use these fields to hide and show columns","colVisRemoveMessage":"Column %d Removed","colVisAddMessage":"Column %d Added","copySuccess":{"_":"%d rows copied to clipboard","1":"1 row copied to clipboard"}}},"ts":{"modeStack":"Stack","modeSwipe":"Swipe","modeToggle":"Toggle","modeSwitchColumnsAbbreviated":"Cols","modeSwitchColumns":"Columns","columnToggleButton":"Columns","columnToggleError":"No eligible columns.","sort":"Sort","sortAscText":": use to sort column ascending","sortDescText":": use to sort column descending","swipePreviousColumn":"Show previous column on the following table","swipeNextColumn":"Show next column on the following table","swipePreviousColumnDisabled":"Show previous column on the following table (not currently available)","swipeNextColumnDisabled":"Show next column on the following table (not currently available)"},"pg":{"infoText":"Showing page {0} of {1}","infoWithRecsText":"Showing page {0} of {1} with {2} records per page","firstBtnText":"First","prevBtnText":"Previous","nextBtnText":"Next","lastBtnText":"Last","firstBtnAriaText":"Show first page","prevBtnAriaText":"Show previous page","nextBtnAriaText":"Show next page","lastBtnAriaText":"Show last page","pageBtnAriaText":"Show page {0}"},"tp":{"currentText":"Now","closeText":"Done","timeOnlyTitle":"Choose Time","timeText":"Time","hourText":"Hour","minuteText":"Minute","secondText":"Second","millisecText":"Millisecond","microsecText":"Microsecond","timezoneText":"Time Zone"},"ui":{"dialogOk":"Ok","dialogCancel":"Cancel","tabsClose":"Close","dialogClose":"Close","moreDetails":"More Details","datePickerDate":"Select a date","datePickerTime":"Select a time","datePickerDateTime":"Select a date\/time","loading":"Loading...","selectAllTitle":"Select All","selectAll":"Select All","selectNone":"Select None","invertAll":"Invert All","errorText":"Error","datePickerMonth":"Select a month","datePickerYear":"Select a year","tabsScrollLeft":"Scroll left","tabsScrollRight":"Scroll right","dynamicSearch":"Searching for Results"},"ld":{"loadTitle":"Loading","loadContent":"Loading, please wait...","processTitle":"Processing","processContent":"Processing, please wait...","saveTitle":"Saving","saveContent":"Saving, please wait..."},"to":{"sessionTitle":"Session Expiry","sessionContent":"Your session is due to expire in approximately {0} minute(s). If you would like to continue using this session, please click \"Continue\".","pageTitle":"Page Expiry","pageContent":"This page is due to expire in approximately {0} minute(s). If you would like to continue using this page, please click \"Continue\".","buttonContinue":"Continue"},"pb":{"fileCreated":"A file has been produced and is ready to be downloaded.","contentDisplayed":"The content has been produced and is ready to be viewed in a new tab or window.","processCompletedTitle":"{0} - Completed","processFailedTitle":"{0} - Errored"},"db":{"linkTitle":"Debug Info","linkDescription":"Show debug information for the current page","dialogTitle":"Debug Information","dialogClose":"Close","noContent":"Debug information is not available."}};sits_widget_det = {"user":{"user":"2252676","name":"XINAN YAN, 颜熙南"},"edge":{"isEdgeStyle":false}}</script>
+<script>sits_user_timeout = "F04FAEBF11A740ACO8t3dFheZaQTarpUWGmC2Huzf0h0ClVFiYlHXlFDZXljRHOoeFj3AfnDydNjjvb5A9_M7Mrqy8VfC1ubhCsrqg";</script>
+<script type="text/javascript">sits_debug_info = []</script>
 <!-- body-start.hts page header include ends here -->
 
+<!-- Start Of Extra Javascripts -->
+<script type="text/javascript" src="../javascript/siw_ygsl.js"></script>
+<!-- End Of Extra Javascripts -->
+
+
+  
     
-      
+    <input type="hidden" name="NKEY.DUMMY.MENSYS.1" value="6BF7D11D03844CEDibRA3loE4CvBZDFN_WAvZTNjewBEtWeo8WBauZGcqVPgEpSCfB6hABY3C4psjEUCeWLTA0_AWD6Toix-K59zImPJuGvxYIQAkz9_HY5GrpvEBDCOQhEHd-3OylVLHEFeczp2wuX2Be0CCl7wVsItBDNme-G6e7NEXMEN7DNHuGo2RlgxHIFdZA7hXRDmEBOBcibygRNQfE_CvNZryk4_lA" disabled="disabled" id="YGSLNKEY">
+    <input type="hidden" name="RUN_MODE.DUMMY.MENSYS.1" value="">
+    
+    
 
-        <input type="hidden" name="RUN_MODE.DUMMY.MENSYS.1" value="" />
-        <input type="hidden" name="NKEY.DUMMY.MENSYS.1" value="" />
 
-        <!-- main content of page starts here -->
-        
-          
-        <!-- title section  -->
-        <div class="sv-page-header sv-hidden-xs">
-          <h1 id="sitspagetitle">
-            System Message
-          </h1>
-          <p id="sitspagedesc">
-            
-          </p>
-        </div>
-        <div class="sv-page-header sv-hidden-md sv-hidden-lg sv-hidden-sm">
-          <h1 class="sv-h1-small">
-            System Message
-          </h1>
-        </div>
+<script type="text/javascript">
+function elementDisplay(objid)
+{var obj=document.getElementById(objid);if(obj.style.display !='none'){obj.style.display='none';}
+else
+{obj.style.display='block';}}
 
-        <!-- end of title section  -->
+function elementHidden(objid)
+{var obj=document.getElementById(objid);if(obj.style.display !='block'){obj.style.display='block';}
+else
+{obj.style.display='none';}}
+</script>
 
-        <div class="sv-row">
-          <div class="sv-col-md-12">
-            <!-- message box -->
-        <div class="sv-panel sv-panel-danger sv-message-box" role="alert">
-          <div class="sv-panel-heading">
-            <strong>Automatic Logout</strong>
-            <div class="sv-hidden-xs sv-pull-right">EVL_020</div>
-          </div>
-          <div class="sv-panel-body">
-            For security reasons, you have been automatically logged out of the system. If you want to re-log in the system, please click <a href="https://ebridge.xjtlu.edu.cn/urd/sits.urd/run/SIW_LGN">here</a>.  Browser_ID 
-          </div>
-        </div>
-        <!-- end of message box-->
 
-          </div>
-        </div>
-        
-        <!-- end of sitspagecontent -->
-      
-      
-    <input type="hidden" name="%.DUMMY.MENSYS.1" value="5IVXzm0glYQ/kiwOcavxWqOCEMkedueZi1DjX3abO/8=;new;;" />
 
-		
+    <h2 align="center">Full Academic Records</h2>
 
+<div class="sv-panel sv-panel-primary">
+<div class="sv-panel-heading">
+ <h2 class="sv-panel-title">Student Information</h2>
+</div>
+<div class="sv-panel-body">
+<div class="sv-table-container sv-table-responsive">
+<div class="sv-container sv-table sv-table-striped sv-table-bordered">  
+<div class="sv-row">
+<div class="sv-col-md-3">Student ID</div> 
+<div class="sv-col-md-3"><b>2252676</b></div>   
+<div class="sv-col-md-3">Student Name</div> 
+<div class="sv-col-md-3"><b>Xinan Yan</b></div>   
+</div>
+</div>
+</div></div></div>
+
+<div class="sv-alert sv-alert-info">
+For 2+2 students, academic records achieved at the University of Liverpool will be updated and made accessible upon graduation.<br>
+For outbound exchange students, academic records achieved at the exchange partner university will be updated and made accessible after receiving the results from the partner university.
+</div>
+
+
+<div class="sv-panel sv-panel-primary">
+<div class="sv-panel-heading">
+ <h2 class="sv-panel-title">2022/23 Academic Year Records</h2>
+</div>
+<div class="sv-panel-body">
+<div class="sv-table-container sv-table-responsive">
+<table class="sv-table sv-table-striped sv-table-bordered">
+<thead>
+<tr>
+<th class="sv-col-md-1">Period</th> 
+<th class="sv-col-md-1">Module Code</th>   
+<th class="sv-col-md-3">Module Title</th>  
+<th class="sv-col-md-1">Credit</th>   
+<th class="sv-col-md-1">Mark</th>
+<th class="sv-col-md-1">Grade</th>  
+<th class="sv-col-md-1">Attempt</th> 
+<th class="sv-col-md-1">Component Marks</th> 
+</tr>
+</thead>
+<tbody>
+
+
+
+<tr>
+<td>ACYR</td>
+<td>EAP035</td>
+<td>Advanced English Communication and Academic Skills I</td>
+<td>10</td>
+<td>  60%</td>
+<td>P</td>
+<td>2</td>
+<td>
+
+
+
+
+<div id="EAP035U" style="display:block;">
+
+<a onclick="elementDisplay('EAP035F');elementHidden('EAP035U')"><font color="#0000FF">View</font></a>
+<span class="sitsnewcoptext"></span>
+</div>
+
+<div id="EAP035F" style="display:none;">
+<a onclick="elementDisplay('EAP035U');elementHidden('EAP035F')"><font color="#0000FF">Hide</font></a>
+<table width="100%" cellspacing="0" cellpadding="0" border="1" style="BORDER-COLLAPSE: collapse;">
+
+<tbody><tr>
+<th width="30%">Component title</th> 
+<th width="20%" align="center">Assessment type</th> 
+<th width="20%" align="center">Weight</th>   
+<th width="30%" align="center">Mark</th>  
+</tr>
+
+<tr>
+<td>Speaking Coursework 1</td> 
+<td align="center">Coursework</td> 
+<td align="center">15%</td>
+<td align="center"> 57.00%</td>
+</tr>
+<tr>
+<td>S1 Exam</td> 
+<td align="center">Examination</td> 
+<td align="center">20%</td>
+<td align="center"> 45.00%</td>
+</tr>
+<tr>
+<td>Writing Coursework</td> 
+<td align="center">Coursework</td> 
+<td align="center">35%</td>
+<td align="center"> 60.00%</td>
+</tr>
+<tr>
+<td>Speaking Coursework 2</td> 
+<td align="center">Coursework</td> 
+<td align="center">30%</td>
+<td align="center">  0.00%</td>
+</tr>
+
+
+
+
+<tr>
+<td>Resit Cw(RESIT) </td>
+        <td align="center">Coursework</td> 
+        <td align="center">100%</td>
+        <td align="center"> 60.12%</td>
+</tr>
+
+
+</tbody></table>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td>SEM1</td>
+<td>CCT001</td>
+<td>The Basic Principles of Marxism</td>
+<td>2</td>
+<td>  52%</td>
+<td>P</td>
+<td>1</td>
+<td>
+
+
+
+
+<div id="CCT001U" style="display:block;">
+
+<a onclick="elementDisplay('CCT001F');elementHidden('CCT001U')"><font color="#0000FF">View</font></a>
+<span class="sitsnewcoptext"></span>
+</div>
+
+<div id="CCT001F" style="display:none;">
+<a onclick="elementDisplay('CCT001U');elementHidden('CCT001F')"><font color="#0000FF">Hide</font></a>
+<table width="100%" cellspacing="0" cellpadding="0" border="1" style="BORDER-COLLAPSE: collapse;">
+
+<tbody><tr>
+<th width="30%">Component title</th> 
+<th width="20%" align="center">Assessment type</th> 
+<th width="20%" align="center">Weight</th>   
+<th width="30%" align="center">Mark</th>  
+</tr>
+
+<tr>
+<td>Final Exam</td> 
+<td align="center">Examination</td> 
+<td align="center">60%</td>
+<td align="center"> 85.00%</td>
+</tr>
+<tr>
+<td>Portfolio</td> 
+<td align="center">Coursework</td> 
+<td align="center">40%</td>
+<td align="center">  2.00%</td>
+</tr>
+
+
+
+
+
+</tbody></table>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td>SEM1</td>
+<td>CCT011</td>
+<td>Mao Zedong Thought and the Theory of Socialism with Chinese Characteristics</td>
+<td>2</td>
+<td>  43%</td>
+<td>P</td>
+<td>1</td>
+<td>
+
+
+
+
+<div id="CCT011U" style="display:block;">
+
+<a onclick="elementDisplay('CCT011F');elementHidden('CCT011U')"><font color="#0000FF">View</font></a>
+<span class="sitsnewcoptext"></span>
+</div>
+
+<div id="CCT011F" style="display:none;">
+<a onclick="elementDisplay('CCT011U');elementHidden('CCT011F')"><font color="#0000FF">Hide</font></a>
+<table width="100%" cellspacing="0" cellpadding="0" border="1" style="BORDER-COLLAPSE: collapse;">
+
+<tbody><tr>
+<th width="30%">Component title</th> 
+<th width="20%" align="center">Assessment type</th> 
+<th width="20%" align="center">Weight</th>   
+<th width="30%" align="center">Mark</th>  
+</tr>
+
+<tr>
+<td>Final Exam</td> 
+<td align="center">Examination</td> 
+<td align="center">60%</td>
+<td align="center"> 70.00%</td>
+</tr>
+<tr>
+<td>Portfolio</td> 
+<td align="center">Coursework</td> 
+<td align="center">40%</td>
+<td align="center">  2.00%</td>
+</tr>
+
+
+
+
+
+</tbody></table>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td>SEM1</td>
+<td>JPL001</td>
+<td>Japanese Stage 1</td>
+<td>5</td>
+<td>  70%</td>
+<td>P</td>
+<td>1</td>
+<td>
+
+
+
+
+<div id="JPL001U" style="display:block;">
+
+<a onclick="elementDisplay('JPL001F');elementHidden('JPL001U')"><font color="#0000FF">View</font></a>
+<span class="sitsnewcoptext"></span>
+</div>
+
+<div id="JPL001F" style="display:none;">
+<a onclick="elementDisplay('JPL001U');elementHidden('JPL001F')"><font color="#0000FF">Hide</font></a>
+<table width="100%" cellspacing="0" cellpadding="0" border="1" style="BORDER-COLLAPSE: collapse;">
+
+<tbody><tr>
+<th width="30%">Component title</th> 
+<th width="20%" align="center">Assessment type</th> 
+<th width="20%" align="center">Weight</th>   
+<th width="30%" align="center">Mark</th>  
+</tr>
+
+<tr>
+<td>Quizzes</td> 
+<td align="center">Coursework</td> 
+<td align="center">15%</td>
+<td align="center"> 45.00%</td>
+</tr>
+<tr>
+<td>In-Semester Test</td> 
+<td align="center">Coursework</td> 
+<td align="center">15%</td>
+<td align="center"> 95.00%</td>
+</tr>
+<tr>
+<td>Speaking Coursework</td> 
+<td align="center">Coursework</td> 
+<td align="center">30%</td>
+<td align="center"> 63.00%</td>
+</tr>
+<tr>
+<td>Integrated Exam</td> 
+<td align="center">Examination</td> 
+<td align="center">40%</td>
+<td align="center"> 76.00%</td>
+</tr>
+
+
+
+
+
+</tbody></table>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td>SEM1</td>
+<td>MTH007</td>
+<td>Linear Algebra</td>
+<td>2.5</td>
+<td>  52%</td>
+<td>P</td>
+<td>1</td>
+<td>
+
+
+
+
+<div id="MTH007U" style="display:block;">
+
+<a onclick="elementDisplay('MTH007F');elementHidden('MTH007U')"><font color="#0000FF">View</font></a>
+<span class="sitsnewcoptext"></span>
+</div>
+
+<div id="MTH007F" style="display:none;">
+<a onclick="elementDisplay('MTH007U');elementHidden('MTH007F')"><font color="#0000FF">Hide</font></a>
+<table width="100%" cellspacing="0" cellpadding="0" border="1" style="BORDER-COLLAPSE: collapse;">
+
+<tbody><tr>
+<th width="30%">Component title</th> 
+<th width="20%" align="center">Assessment type</th> 
+<th width="20%" align="center">Weight</th>   
+<th width="30%" align="center">Mark</th>  
+</tr>
+
+<tr>
+<td>Written Examination</td> 
+<td align="center">Examination</td> 
+<td align="center">80%</td>
+<td align="center"> 50.00%</td>
+</tr>
+<tr>
+<td>Course Work</td> 
+<td align="center">Coursework</td> 
+<td align="center">20%</td>
+<td align="center"> 58.50%</td>
+</tr>
+
+
+
+
+
+</tbody></table>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td>SEM1</td>
+<td>MTH013</td>
+<td>Calculus (Science and Engineering)</td>
+<td>5</td>
+<td>  69%</td>
+<td>P</td>
+<td>1</td>
+<td>
+
+
+
+
+<div id="MTH013U" style="display:block;">
+
+<a onclick="elementDisplay('MTH013F');elementHidden('MTH013U')"><font color="#0000FF">View</font></a>
+<span class="sitsnewcoptext"></span>
+</div>
+
+<div id="MTH013F" style="display:none;">
+<a onclick="elementDisplay('MTH013U');elementHidden('MTH013F')"><font color="#0000FF">Hide</font></a>
+<table width="100%" cellspacing="0" cellpadding="0" border="1" style="BORDER-COLLAPSE: collapse;">
+
+<tbody><tr>
+<th width="30%">Component title</th> 
+<th width="20%" align="center">Assessment type</th> 
+<th width="20%" align="center">Weight</th>   
+<th width="30%" align="center">Mark</th>  
+</tr>
+
+<tr>
+<td>Written Examination</td> 
+<td align="center">Examination</td> 
+<td align="center">75%</td>
+<td align="center"> 73.00%</td>
+</tr>
+<tr>
+<td>In-Semester Examination</td> 
+<td align="center">Examination</td> 
+<td align="center">15%</td>
+<td align="center"> 64.00%</td>
+</tr>
+<tr>
+<td>Course Work</td> 
+<td align="center">Coursework</td> 
+<td align="center">10%</td>
+<td align="center"> 45.00%</td>
+</tr>
+
+
+
+
+
+</tbody></table>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td>SEM1</td>
+<td>PHE001</td>
+<td>Physical Education 1</td>
+<td>1</td>
+<td>  60%</td>
+<td>P</td>
+<td>2</td>
+<td>
+
+
+
+
+<div id="PHE001U" style="display:block;">
+
+<a onclick="elementDisplay('PHE001F');elementHidden('PHE001U')"><font color="#0000FF">View</font></a>
+<span class="sitsnewcoptext"></span>
+</div>
+
+<div id="PHE001F" style="display:none;">
+<a onclick="elementDisplay('PHE001U');elementHidden('PHE001F')"><font color="#0000FF">Hide</font></a>
+<table width="100%" cellspacing="0" cellpadding="0" border="1" style="BORDER-COLLAPSE: collapse;">
+
+<tbody><tr>
+<th width="30%">Component title</th> 
+<th width="20%" align="center">Assessment type</th> 
+<th width="20%" align="center">Weight</th>   
+<th width="30%" align="center">Mark</th>  
+</tr>
+
+<tr>
+<td>Skill Test</td> 
+<td align="center">Coursework</td> 
+<td align="center">50%</td>
+<td align="center"> 19.55%</td>
+</tr>
+<tr>
+<td>Fitness Test</td> 
+<td align="center">Coursework</td> 
+<td align="center">40%</td>
+<td align="center"> 42.91%</td>
+</tr>
+<tr>
+<td>Online Quiz</td> 
+<td align="center">Coursework</td> 
+<td align="center">10%</td>
+<td align="center"> 73.33%</td>
+</tr>
+
+
+
+
+<tr>
+<td>Resit Coursework(RESIT) </td>
+        <td align="center">Coursework</td> 
+        <td align="center">100%</td>
+        <td align="center"> 60.00%</td>
+</tr>
+
+
+</tbody></table>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td>SEM1</td>
+<td>SAT001</td>
+<td>Explore Advanced Technology</td>
+<td>2.5</td>
+<td>  88%</td>
+<td>P</td>
+<td>1</td>
+<td>
+
+
+
+
+<div id="SAT001U" style="display:block;">
+
+<a onclick="elementDisplay('SAT001F');elementHidden('SAT001U')"><font color="#0000FF">View</font></a>
+<span class="sitsnewcoptext"></span>
+</div>
+
+<div id="SAT001F" style="display:none;">
+<a onclick="elementDisplay('SAT001U');elementHidden('SAT001F')"><font color="#0000FF">Hide</font></a>
+<table width="100%" cellspacing="0" cellpadding="0" border="1" style="BORDER-COLLAPSE: collapse;">
+
+<tbody><tr>
+<th width="30%">Component title</th> 
+<th width="20%" align="center">Assessment type</th> 
+<th width="20%" align="center">Weight</th>   
+<th width="30%" align="center">Mark</th>  
+</tr>
+
+<tr>
+<td>In-Class Test</td> 
+<td align="center">Coursework</td> 
+<td align="center">20%</td>
+<td align="center"> 70.00%</td>
+</tr>
+<tr>
+<td>In-Class Test</td> 
+<td align="center">Coursework</td> 
+<td align="center">20%</td>
+<td align="center"> 95.00%</td>
+</tr>
+<tr>
+<td>Exam</td> 
+<td align="center">Examination</td> 
+<td align="center">60%</td>
+<td align="center"> 92.00%</td>
+</tr>
+
+
+
+
+
+</tbody></table>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td>SEM2</td>
+<td>CCT008</td>
+<td>Ideological and Moral Cultivation and Basis of Law</td>
+<td>2</td>
+<td>  53%</td>
+<td>P</td>
+<td>2</td>
+<td>
+
+
+
+
+<div id="CCT008U" style="display:block;">
+
+<a onclick="elementDisplay('CCT008F');elementHidden('CCT008U')"><font color="#0000FF">View</font></a>
+<span class="sitsnewcoptext"></span>
+</div>
+
+<div id="CCT008F" style="display:none;">
+<a onclick="elementDisplay('CCT008U');elementHidden('CCT008F')"><font color="#0000FF">Hide</font></a>
+<table width="100%" cellspacing="0" cellpadding="0" border="1" style="BORDER-COLLAPSE: collapse;">
+
+<tbody><tr>
+<th width="30%">Component title</th> 
+<th width="20%" align="center">Assessment type</th> 
+<th width="20%" align="center">Weight</th>   
+<th width="30%" align="center">Mark</th>  
+</tr>
+
+<tr>
+<td>Final Examination</td> 
+<td align="center">Examination</td> 
+<td align="center">60%</td>
+<td align="center"> 57.00%</td>
+</tr>
+<tr>
+<td>Online Discussion</td> 
+<td align="center">Coursework</td> 
+<td align="center">20%</td>
+<td align="center">  0.00%</td>
+</tr>
+<tr>
+<td>In-Class Quiz</td> 
+<td align="center">Coursework</td> 
+<td align="center">20%</td>
+<td align="center">  0.00%</td>
+</tr>
+
+
+
+
+<tr>
+<td>Resit Exam(RESIT) </td>
+        <td align="center">Examination</td> 
+        <td align="center">100%</td>
+        <td align="center"> 53.00%</td>
+</tr>
+
+
+</tbody></table>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td>SEM2</td>
+<td>CCT010</td>
+<td>Outline of Chinese Modern History</td>
+<td>2</td>
+<td>  48%</td>
+<td>P</td>
+<td>1</td>
+<td>
+
+
+
+
+<div id="CCT010U" style="display:block;">
+
+<a onclick="elementDisplay('CCT010F');elementHidden('CCT010U')"><font color="#0000FF">View</font></a>
+<span class="sitsnewcoptext"></span>
+</div>
+
+<div id="CCT010F" style="display:none;">
+<a onclick="elementDisplay('CCT010U');elementHidden('CCT010F')"><font color="#0000FF">Hide</font></a>
+<table width="100%" cellspacing="0" cellpadding="0" border="1" style="BORDER-COLLAPSE: collapse;">
+
+<tbody><tr>
+<th width="30%">Component title</th> 
+<th width="20%" align="center">Assessment type</th> 
+<th width="20%" align="center">Weight</th>   
+<th width="30%" align="center">Mark</th>  
+</tr>
+
+<tr>
+<td>Final Exam</td> 
+<td align="center">Examination</td> 
+<td align="center">60%</td>
+<td align="center"> 75.00%</td>
+</tr>
+<tr>
+<td>Online Discussion</td> 
+<td align="center">Coursework</td> 
+<td align="center">20%</td>
+<td align="center"> 10.00%</td>
+</tr>
+<tr>
+<td>In-Class Quiz</td> 
+<td align="center">Coursework</td> 
+<td align="center">20%</td>
+<td align="center">  5.00%</td>
+</tr>
+
+
+
+
+
+</tbody></table>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td>SEM2</td>
+<td>JPL002</td>
+<td>Japanese Stage 2</td>
+<td>5</td>
+<td>  63%</td>
+<td>P</td>
+<td>1</td>
+<td>
+
+
+
+
+<div id="JPL002U" style="display:block;">
+
+<a onclick="elementDisplay('JPL002F');elementHidden('JPL002U')"><font color="#0000FF">View</font></a>
+<span class="sitsnewcoptext"></span>
+</div>
+
+<div id="JPL002F" style="display:none;">
+<a onclick="elementDisplay('JPL002U');elementHidden('JPL002F')"><font color="#0000FF">Hide</font></a>
+<table width="100%" cellspacing="0" cellpadding="0" border="1" style="BORDER-COLLAPSE: collapse;">
+
+<tbody><tr>
+<th width="30%">Component title</th> 
+<th width="20%" align="center">Assessment type</th> 
+<th width="20%" align="center">Weight</th>   
+<th width="30%" align="center">Mark</th>  
+</tr>
+
+<tr>
+<td>Quizzes</td> 
+<td align="center">Coursework</td> 
+<td align="center">15%</td>
+<td align="center"> 18.00%</td>
+</tr>
+<tr>
+<td>In-Semester Test</td> 
+<td align="center">Coursework</td> 
+<td align="center">15%</td>
+<td align="center"> 96.00%</td>
+</tr>
+<tr>
+<td>Speaking Coursework</td> 
+<td align="center">Coursework</td> 
+<td align="center">30%</td>
+<td align="center"> 60.30%</td>
+</tr>
+<tr>
+<td>Integrated Exam</td> 
+<td align="center">Examination</td> 
+<td align="center">40%</td>
+<td align="center"> 69.60%</td>
+</tr>
+
+
+
+
+
+</tbody></table>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td>SEM2</td>
+<td>MTH008</td>
+<td>Multivariable Calculus (Science and Engineering)</td>
+<td>5</td>
+<td>  54%</td>
+<td>P</td>
+<td>1</td>
+<td>
+
+
+
+
+<div id="MTH008U" style="display:block;">
+
+<a onclick="elementDisplay('MTH008F');elementHidden('MTH008U')"><font color="#0000FF">View</font></a>
+<span class="sitsnewcoptext"></span>
+</div>
+
+<div id="MTH008F" style="display:none;">
+<a onclick="elementDisplay('MTH008U');elementHidden('MTH008F')"><font color="#0000FF">Hide</font></a>
+<table width="100%" cellspacing="0" cellpadding="0" border="1" style="BORDER-COLLAPSE: collapse;">
+
+<tbody><tr>
+<th width="30%">Component title</th> 
+<th width="20%" align="center">Assessment type</th> 
+<th width="20%" align="center">Weight</th>   
+<th width="30%" align="center">Mark</th>  
+</tr>
+
+<tr>
+<td>Written Examination</td> 
+<td align="center">Examination</td> 
+<td align="center">75%</td>
+<td align="center"> 57.00%</td>
+</tr>
+<tr>
+<td>In-Semester Examination</td> 
+<td align="center">Examination</td> 
+<td align="center">15%</td>
+<td align="center"> 64.00%</td>
+</tr>
+<tr>
+<td>Course Work</td> 
+<td align="center">Coursework</td> 
+<td align="center">10%</td>
+<td align="center"> 17.00%</td>
+</tr>
+
+
+
+
+
+</tbody></table>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td>SEM2</td>
+<td>PHE002</td>
+<td>Physical Education 2</td>
+<td>1</td>
+<td>  73%</td>
+<td>P</td>
+<td>2</td>
+<td>
+
+
+
+
+<div id="PHE002U" style="display:block;">
+
+<a onclick="elementDisplay('PHE002F');elementHidden('PHE002U')"><font color="#0000FF">View</font></a>
+<span class="sitsnewcoptext"></span>
+</div>
+
+<div id="PHE002F" style="display:none;">
+<a onclick="elementDisplay('PHE002U');elementHidden('PHE002F')"><font color="#0000FF">Hide</font></a>
+<table width="100%" cellspacing="0" cellpadding="0" border="1" style="BORDER-COLLAPSE: collapse;">
+
+<tbody><tr>
+<th width="30%">Component title</th> 
+<th width="20%" align="center">Assessment type</th> 
+<th width="20%" align="center">Weight</th>   
+<th width="30%" align="center">Mark</th>  
+</tr>
+
+<tr>
+<td>Skill Test</td> 
+<td align="center">Coursework</td> 
+<td align="center">50%</td>
+<td align="center">  0.00%</td>
+</tr>
+<tr>
+<td>Fitness Test</td> 
+<td align="center">Coursework</td> 
+<td align="center">40%</td>
+<td align="center">  0.00%</td>
+</tr>
+<tr>
+<td>Online Quiz</td> 
+<td align="center">Coursework</td> 
+<td align="center">10%</td>
+<td align="center">  0.00%</td>
+</tr>
+
+
+
+
+<tr>
+<td>Cw(RESIT) </td>
+        <td align="center">Coursework</td> 
+        <td align="center">100%</td>
+        <td align="center"> 73.33%</td>
+</tr>
+
+
+</tbody></table>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td>SEM2</td>
+<td>PHY002</td>
+<td>Physics</td>
+<td>5</td>
+<td>  53%</td>
+<td>P</td>
+<td>1</td>
+<td>
+
+
+
+
+<div id="PHY002U" style="display:block;">
+
+<a onclick="elementDisplay('PHY002F');elementHidden('PHY002U')"><font color="#0000FF">View</font></a>
+<span class="sitsnewcoptext"></span>
+</div>
+
+<div id="PHY002F" style="display:none;">
+<a onclick="elementDisplay('PHY002U');elementHidden('PHY002F')"><font color="#0000FF">Hide</font></a>
+<table width="100%" cellspacing="0" cellpadding="0" border="1" style="BORDER-COLLAPSE: collapse;">
+
+<tbody><tr>
+<th width="30%">Component title</th> 
+<th width="20%" align="center">Assessment type</th> 
+<th width="20%" align="center">Weight</th>   
+<th width="30%" align="center">Mark</th>  
+</tr>
+
+<tr>
+<td>Coursework</td> 
+<td align="center">Coursework</td> 
+<td align="center">15%</td>
+<td align="center"> 16.70%</td>
+</tr>
+<tr>
+<td>Lab Report</td> 
+<td align="center">Coursework</td> 
+<td align="center">15%</td>
+<td align="center">  0.00%</td>
+</tr>
+<tr>
+<td>Written Examination</td> 
+<td align="center">Examination</td> 
+<td align="center">70%</td>
+<td align="center"> 72.00%</td>
+</tr>
+
+
+
+
+
+</tbody></table>
+
+</div>
+
+</td>
+</tr>
+
+
+
+</tbody></table>
+
+
+<p><b>Additional Learning</b></p>
+<table class="sv-table sv-table-striped sv-table-bordered">
+<tbody><tr>
+<th class="sv-col-md-1">Period</th> 
+<th class="sv-col-md-1">Module Code</th>   
+<th class="sv-col-md-2">Module Title</th>  
+<th class="sv-col-md-2">Mark</th>
+<th class="sv-col-md-2">Grade</th>  
+<th class="sv-col-md-2">Component Marks</th> 
+</tr>
+
+
+<tr>
+<td>ACYR</td>
+<td>CCT012</td>
+<td>Situation and Policy</td>
+<td>  40%</td>
+<td>P</td>
+<td>
+
+
+
+<div id="CCT012U" style="display:block;">
+
+<a onclick="elementDisplay('CCT012F');elementHidden('CCT012U')"><font color="#0000FF">View</font></a>
+<span class="sitsnewcoptext"></span>
+</div>
+
+<div id="CCT012F" style="display:none;">
+<a onclick="elementDisplay('CCT012U');elementHidden('CCT012F')"><font color="#0000FF">Hide</font></a>
+<table width="100%" cellspacing="0" cellpadding="0" border="1" style="BORDER-COLLAPSE: collapse;">
+
+<tbody><tr>
+<th width="30%">Component title</th> 
+<th width="20%" align="center">Assessment type</th> 
+<th width="20%" align="center">Weight</th>   
+<th width="30%" align="center">Mark</th>  
+</tr>
+
+<tr>
+<td>Essay</td> 
+<td align="center">Coursework</td> 
+<td align="center">40%</td>
+<td align="center">  0.00%</td>
+</tr>
+<tr>
+<td>Portfolio</td> 
+<td align="center">Coursework</td> 
+<td align="center">60%</td>
+<td align="center"> 67.00%</td>
+</tr>
+
+
+
+
+
+</tbody></table>
+
+</div>
+</td>
+</tr>
+
+<tr>
+<td>SEM1</td>
+<td>CCT007</td>
+<td>Self-management</td>
+<td>  72%</td>
+<td>P</td>
+<td>
+
+
+
+<div id="CCT007U" style="display:block;">
+
+<a onclick="elementDisplay('CCT007F');elementHidden('CCT007U')"><font color="#0000FF">View</font></a>
+<span class="sitsnewcoptext"></span>
+</div>
+
+<div id="CCT007F" style="display:none;">
+<a onclick="elementDisplay('CCT007U');elementHidden('CCT007F')"><font color="#0000FF">Hide</font></a>
+<table width="100%" cellspacing="0" cellpadding="0" border="1" style="BORDER-COLLAPSE: collapse;">
+
+<tbody><tr>
+<th width="30%">Component title</th> 
+<th width="20%" align="center">Assessment type</th> 
+<th width="20%" align="center">Weight</th>   
+<th width="30%" align="center">Mark</th>  
+</tr>
+
+<tr>
+<td> In-Class Quiz</td> 
+<td align="center">Coursework</td> 
+<td align="center">30%</td>
+<td align="center">  9.00%</td>
+</tr>
+<tr>
+<td>Online Discussion</td> 
+<td align="center">Coursework</td> 
+<td align="center">35%</td>
+<td align="center">  0.00%</td>
+</tr>
+<tr>
+<td>Video Coursework</td> 
+<td align="center">Coursework</td> 
+<td align="center">35%</td>
+<td align="center"> 87.00%</td>
+</tr>
+
+
+
+
+<tr>
+<td>Resit Exam(RESIT) </td>
+        <td align="center">Coursework</td> 
+        <td align="center">100%</td>
+        <td align="center"> 72.00%</td>
+</tr>
+
+
+</tbody></table>
+
+</div>
+</td>
+</tr>
+
+
+
+</tbody></table>
+
+
+
+</div></div></div>
+
+
+
+<!--
+<p style="font-family:Times New Roman, Times, serif; font-size:16px;">The module(s) you need to take resit has been removed from the list. Resit marks will be released at the middle of August, 2023.</p>
+-->
+
+<p style="font-family:Times New Roman, Times, serif; font-size:16px;"><em>Interpretation of Grade:P – Pass, F- Fail, CP – Compensable Pass, FQ – Fail at a mandatory component (required to resit).</em></p>
+
+<!-- Statistics report -->
+<p style="font-family:Times New Roman, Times, serif; font-size:16px;">2022/22 Student Performance Statistics <a href="../run/SIW_FILE_LOAD.start_url?B566AB81274041EBNUYxuW1HI2MdSj-HYtj6AgX7zDQdjmFtuqIi5eazBDakdkAzco-gDAsa_NfYATddjwVW0fTgDCiUmXoM6UTd-6uYQibi1cNcaaAXllTMI_ptdP6X9reJdTfv4sOuzqyZjGBDpKJVBtYyOBAgWC3gzdYCkVTNFLj9j2Gjp8HBaoHJFkX8wAdUepgYln4JevrtCNHO9a4_A56jCYxAu0WzOIDQwjm6liH4Ts5RmqCQMIyLuB5NE5V06SMyNCBouKJhNMniCMBXgkJEzs1cWgxmmaO-W9VecphklOw-Y4qtI9Y" target="new">by Module</a> and <a href="../run/SIW_FILE_LOAD.start_url?1F3C19A02B484947_wFbCpqi5Lflk7svcDVZ0XkfZHDXAq5YGXQbXRw6aUMtwy2jg5wuYYjzXMaUJTrx_PUf21KTGElhwfvkJULjO3LMd9RN50XKkTvsmWgz4NYnUAzqMxkR-nqAyEapRq-B_PClvSP9CpYugFOqU9j8yJG0i3VCEU0skAHI0wYrqPSeXDzriB1as6Mc7nqO86L3J5zWBbheQri0IjK4Zr3WB0y-79H2KJq9g1dLN62pjj4KAsJFaJD9JyxAQgv6z_fPW9mlaCt_B1aQpTDqTRWREcEV7Fn5HLZQ3ZdeEeLFW4c" target="new">by Programme</a></p>
+
+
+<p style="font-family:Times New Roman, Times, serif; font-size:18px;">Please click the following links to check your historical academic records:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+  
+<input type="hidden" name="%.DUMMY.MENSYS.1" value="RN1N21zNrk5sID3UYUC6Ci5DVfKP4+pIUnjR/YVw3oE=;new;;">
 
 <!-- body-end.hts page header include starts here -->
+
   
-        </div>
-    
-   <footer class="sv-footer">
-      <div class="sv-footer-text">
-              </div>
-		<div class="sv-footer-copy">
-			<a href="http://www.xjtlu.edu.cn">Copyright 2011 © Xi'an Jiaotong-Liverpool University</a>
-		</div>
-    </footer>
-    
-  </body>
-</html>
+<script>var sitsHelpContext = {"TYPE":"PRA", "CODE":"SIW_YGSL"};</script>
+
+  </div>
   
+ <footer class="sv-footer">
+    <div class="sv-footer-text">
+            </div>
+  <div class="sv-footer-copy">
+    <a href="http://www.xjtlu.edu.cn">Copyright 2011 © Xi'an Jiaotong-Liverpool University</a>
+  </div>
+  </footer>
+  
+
+
+
+<span id="sits_announce_element_polite" aria-live="polite" aria-atomic="true" aria-relevant="all" class="sv-sr-only"></span><span id="sits_announce_element_assertive" aria-live="assertive" aria-atomic="true" aria-relevant="all" class="sv-sr-only"></span><span id="sits_bp_element" class="sv-hide"><span id="sits_bp_element_xs" class="sv-hidden-xs">&nbsp;</span><span id="sits_bp_element_sm" class="sv-hidden-sm">&nbsp;</span><span id="sits_bp_element_md" class="sv-hidden-md">&nbsp;</span></span></body><editor-card style="position:absolute;top:0px;left:0px;z-index:auto;display: block !important"><div dir="auto" style="all: initial;"><div style="color: initial; font: initial; font-palette: initial; font-synthesis: initial; forced-color-adjust: initial; text-orientation: initial; text-rendering: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; animation-composition: initial; animation: initial; app-region: initial; appearance: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; baseline-source: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; inset: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; color-scheme: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-block-size: initial; contain-intrinsic-size: initial; contain-intrinsic-inline-size: initial; container: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: initial; dominant-baseline: initial; empty-cells: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: initial; hyphenate-character: initial; hyphenate-limit-chars: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; initial-letter: initial; inline-size: initial; inset-block: initial; inset-inline: initial; isolation: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask: initial; mask-type: initial; math-depth: initial; math-shift: initial; math-style: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; object-view-box: initial; offset: initial; opacity: initial; order: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-clip-margin: initial; overflow-wrap: initial; overflow: initial; overlay: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position: absolute; quotes: initial; r: initial; resize: initial; rotate: initial; ruby-position: initial; rx: initial; ry: initial; scale: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; scroll-timeline: initial; scrollbar-gutter: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-emphasis: initial; text-emphasis-position: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-size-adjust: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; white-space: initial; timeline-scope: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; translate: initial; user-select: initial; vector-effect: initial; vertical-align: initial; view-timeline: initial; view-timeline-inset: initial; view-transition-name: initial; visibility: initial; border-spacing: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-mask: initial; -webkit-mask-composite: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-user-drag: initial; -webkit-user-modify: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: 2147483647;"><link rel="stylesheet" href="chrome-extension://gpaiobkfhnonedkhhfjpmhdalgeoebfa/fonts/fabric-icons.css"><div style="all: initial;"></div></div><div style="color: initial; font: initial; font-palette: initial; font-synthesis: initial; forced-color-adjust: initial; text-orientation: initial; text-rendering: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; animation-composition: initial; animation: initial; app-region: initial; appearance: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; baseline-source: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; inset: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; color-scheme: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-block-size: initial; contain-intrinsic-size: initial; contain-intrinsic-inline-size: initial; container: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: initial; dominant-baseline: initial; empty-cells: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: initial; hyphenate-character: initial; hyphenate-limit-chars: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; initial-letter: initial; inline-size: initial; inset-block: initial; inset-inline: initial; isolation: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask: initial; mask-type: initial; math-depth: initial; math-shift: initial; math-style: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; object-view-box: initial; offset: initial; opacity: initial; order: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-clip-margin: initial; overflow-wrap: initial; overflow: initial; overlay: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position: absolute; quotes: initial; r: initial; resize: initial; rotate: initial; ruby-position: initial; rx: initial; ry: initial; scale: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; scroll-timeline: initial; scrollbar-gutter: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-emphasis: initial; text-emphasis-position: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-size-adjust: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; white-space: initial; timeline-scope: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; translate: initial; user-select: initial; vector-effect: initial; vertical-align: initial; view-timeline: initial; view-timeline-inset: initial; view-transition-name: initial; visibility: initial; border-spacing: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-mask: initial; -webkit-mask-composite: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-user-drag: initial; -webkit-user-modify: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: 2147483647;"><link rel="stylesheet" href="chrome-extension://gpaiobkfhnonedkhhfjpmhdalgeoebfa/fonts/fabric-icons.css"></div><div id="editorNotificationContainer" style="color: initial; font: initial; font-palette: initial; font-synthesis: initial; forced-color-adjust: initial; text-orientation: initial; text-rendering: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; animation-composition: initial; animation: initial; app-region: initial; appearance: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; baseline-source: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; bottom: 0px; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; color-scheme: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-block-size: initial; contain-intrinsic-size: initial; contain-intrinsic-inline-size: initial; container: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: flex; dominant-baseline: initial; empty-cells: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-direction: column-reverse; flex-wrap: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: initial; hyphenate-character: initial; hyphenate-limit-chars: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; initial-letter: initial; inline-size: initial; inset-block: initial; inset-inline: initial; isolation: initial; left: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: 1em; margin-inline: initial; marker: initial; mask: initial; mask-type: initial; math-depth: initial; math-shift: initial; math-style: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; object-view-box: initial; offset: initial; opacity: initial; order: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-clip-margin: initial; overflow-wrap: initial; overflow: initial; overlay: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position: fixed; quotes: initial; r: initial; resize: initial; right: 0px; rotate: initial; ruby-position: initial; rx: initial; ry: initial; scale: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; scroll-timeline: initial; scrollbar-gutter: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-emphasis: initial; text-emphasis-position: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-size-adjust: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; white-space: initial; timeline-scope: initial; top: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; translate: initial; user-select: initial; vector-effect: initial; vertical-align: initial; view-timeline: initial; view-timeline-inset: initial; view-transition-name: initial; visibility: initial; border-spacing: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-mask: initial; -webkit-mask-composite: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-user-drag: initial; -webkit-user-modify: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: 2147483647;"></div></div></editor-card></html>
